@@ -87,11 +87,12 @@ article p{
     font-weight: bold;
     padding: 12px;
     display: block;
-    width: fit-content;
     margin-top: 12px;
+    margin-left: auto;
+    width: fit-content;
     background-color: #d3d3d3;
     border-radius: 8px;
-    margin-left: auto;
+    
 }
 footer{
     background-color: #d3d3d3;
