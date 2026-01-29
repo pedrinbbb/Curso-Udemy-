@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .flexbox{
+        display: flex;
+        border: 3px solid red;
+        height: 250px;
+        margin-bottom: 16px;
+    }
+    .flexbox div{
+        border: 2px solid yellow;
+        width: 100px;
+        margin: 24px;
+    }
+    .flex-container1{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .flex-container2{
+        justify-content: space-around;
+    }
+    .flex-container2 div{
+        width: 50px;
+    }
+    .flex-container3{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flex-container3 div{
+        width: 50px;
+    }
+     .flex-container4{
+        justify-content: space-around;
+        align-items: center;
+    }
+    .flex-container4 div{
+        width: 50px;
+    }
+    .flex-container5{
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-start;
+    }
+    .flex-container5 div{
+        width: 50px;
+    }
+</style>
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container2">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container4">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+</body>
+</html>
