@@ -49,6 +49,76 @@
     .flex-container5 div{
         width: 50px;
     }
+    .flex-container7{
+       justify-content: center;
+       align-items: flex-start;
+       flex-direction: column;
+       height: 400px;
+    }
+    .flex-container7 div{
+       background-color: yellow;
+       border: 1px solid red;
+       width: 50px;
+       height: 50px;
+    }
+    .flex-container7 .div2{
+        flex-basis: px;
+    }
+    .flex-container8{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid red;
+        height: 400px;
+        gap: 15px;
+    }
+    .flex-container8 div{
+        flex-basis: 50px;
+        background-color: orange;
+        flex-grow: 0;
+        margin: 0px;
+    }
+    .flex-container8 .div2{
+        flex-grow: 1;
+    }
+    .flex-container8 .div4{
+        flex-grow: 1;
+    }
+    .flex-container9{
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        gap: 10px;
+    }
+    .flex-container9 div{
+        text-align: center;
+        color: white;
+        margin: 0;
+        flex-basis: 150px;
+        background-color: blue;
+    }
+    .flex-container9 .div1{
+        flex-shrink: 1;
+    }
+    .flex-container9 .div3{
+        /* grow, shrink, basis */
+        flex: 1 1 300px;
+    }
+    .flex-container10{
+        background-color: green;
+        height: 300px;
+        font-size: 36px;
+        color: white;
+    }
+    .flex-container10 .div2{
+        order:2 ;
+        align-self: flex-start;
+    }
+    .flex-container10 .div1{
+        align-self: center;
+        order: 1 ;
+    }
+    
 </style>
 <body>
     <div class="flexbox flex-container1">
@@ -76,6 +146,30 @@
         <div class="div4">4</div>
     </div>
     <div class="flexbox flex-container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container7">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container8">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container9">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+    <div class="flexbox flex-container10">
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>
