@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-color: aqua;
+    color: rgb(24, 70, 54);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.ul-container{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    overflow-y: scroll;
+    border-radius: 2%;
+}
+.li-container{
+    padding: 16px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9%;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.171);
+    flex-grow: 1;
+}
+.li-container:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+}
+.li-container:hover .lixeira{
+    opacity: 1;
+}
+.lixeira{
+    display: flex;
+    gap: 16px;
+    opacity: 0;
+    color: rgba(128, 128, 128, 0.555);
+    cursor: pointer;
+}
+.img-contato img{
+    width: 80px;
+    border-radius: 50%
+}
+.nome{
+    font-size: 24px;
+}
+.email{
+    font-size: 1em;
+    color: rgba(129, 129, 129, 0.658);
+}
