@@ -10,19 +10,21 @@ body{
     max-width: 960px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: auto;
-    letter-spacing: 3px;
+    
 }
 .header-container{
     display: flex;
     justify-content: space-between;
     padding: 16px;
-    margin-top: 7px;
+    margin-top: 0px;
     align-items: center;
     background-color: #03030385;
+    letter-spacing: 3px;
 }
 .header-container ul{
     list-style: none;
 }
+
 .ul-container{
     display: flex;
     gap: 7px;
@@ -30,18 +32,28 @@ body{
 }
 .ul-container a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+a.planos-ativo{
+    padding: 14px;
+    background-color: #cbe300;
+    color: black;
+    cursor: default;
+    border-radius: 12px;
+    pointer-events: none;
+}
+.ul-container a:hover{
+    text-decoration: underline;
+}
 .ul-container li{
     font-size: 1.1em;
-    padding: 8px;
+    padding: 14px 8px;
     border-radius: 7px;
 }
 .ul-container li:hover{
-    background-color: rgba(217, 255, 0, 0.76);
-    text-decoration: underline;
+
     transition: 0.5s;
 }
 .main-tittle{
@@ -57,10 +69,42 @@ body{
     gap: 24px;
 }
 .precos{
-    background-color: black;
-    padding: 40px;
-    letter-spacing: 2px;
+    background-color: rgb(50, 52, 58);
+    padding: 28px 35px;
+    letter-spacing: 1px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0px 5px 12px -3px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
 }
 .tittle-precos{
-    border-bottom: 1px solid white;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid rgb(210, 255, 12);
+    letter-spacing: 3px;
+}
+.precos span{
+    font-size: 34px;
+}
+.info-tabela{
+    margin: 12px 0px 35px 0px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+.info-tabela li::marker{
+    color: #cbe300;
+}
+a.assine-ja{
+    text-decoration: none;
+    color: black;
+    background-color: #cbe300;
+    padding: 16px 10px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
 }
