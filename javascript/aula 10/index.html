@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>if else</title>
+</head>
+<body>
+        <h1>if else</h1>
+
+
+        <script>
+            /* let n1 = Number(prompt('Digite sua nota: '))
+            let n2 = Number(prompt('Digite sua nota: '))
+            let media = (n1 + n2) / 2
+            if(media > 4 && n1 == 0 && n2 == 0){
+                alert('Aprovado')
+            }else{
+                alert('Reprovado')
+            } */
+
+            let n1 = Number(prompt('Digite um numero de 0 a 10'))
+            let n2 = Number(prompt('Digite um numero de 0 a 10'))
+            let media = (n1 + n2) / 2
+            
+            if(n1 <= 10 && n2 <= 10 && n1 >= 0 && n2 >= 0 && !isNaN(n1) && !isNaN(n2)){
+                if(media > 4 && n1 > 0 && n2 > 0){
+                    alert('Aprovado')
+                } else{
+                    alert('Reprovado')
+                }
+            }else{
+                alert('digite apenas numeros entre 0 e 10')
+            }
+                
+
+
+        </script>
+</body>
+</html>
