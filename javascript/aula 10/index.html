@@ -19,7 +19,7 @@
                 alert('Reprovado')
             } */
 
-            let n1 = Number(prompt('Digite um numero de 0 a 10'))
+            /* let n1 = Number(prompt('Digite um numero de 0 a 10'))
             let n2 = Number(prompt('Digite um numero de 0 a 10'))
             let media = (n1 + n2) / 2
             
@@ -31,8 +31,23 @@
                 }
             }else{
                 alert('digite apenas numeros entre 0 e 10')
+            } */
+
+            let n1 = Number(prompt('Digite um numero de 0 a 10'))
+            let n2 = Number(prompt('digite um numero de 0 a 10'))
+            let media = (n1 + n2)/ 2
+            
+            if (isNaN (n1) || isNaN(n2)){
+                alert('Digite apenas numeros')
+            }else if(n1 < 0 || n2< 0 || n1 > 10 || n2 > 10){
+                alert('Digite apenas numeros entre 0 e 10')
+            }else{
+                if(media >= 7 && n1 > 0 && n2 > 0){
+                    alert('Aprovado')
+                }else{
+                    alert('Reprovado')
+                }
             }
-                
 
 
         </script>
