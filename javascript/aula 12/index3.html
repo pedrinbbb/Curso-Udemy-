@@ -6,12 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>while</h1>
+    <h1>Clique no botao para mudar de cor</h1>
+    <button type="button" id="button" onclick="mostrarPix()">escolha a forma de pagamento</button>
+
+    <div id="pagamento" style="display: none;">
+        <button id="mudarCorPix" onclick="mudarCor()">pix</button>
+        <button type="button" id="cartao" onclick="mostrarCartao()">Cartão</button>
+        <div id="credito-debito"></div>
+        <div id="pix"></div>
+    </div>
 
     <script>
+        var mostrarPagamento = document.getElementById('pagamento')
+        function mostrarPix(){
+            if(mostrarPagamento.style.display === "none"){
+                mostrarPagamento.style.display = "block"
+            }else{
+                mostrarPagamento.style.display = "none"
+            }
 
-        for(let ano = 1004; ano <= 2024; ano += 4){
-            document.write(`${ano} <br>`)
+        }
+        function mostrarCartao(){
+            document.getElementById('credito-debito').innerHTML = (`<button> Credito </button>`)
+            mudarCorPix.style.display = "none"
+
+        }
+        const mudarCorPix = document.getElementById('mudarCorPix')
+
+        function mudarCor(){
+            mudarCorPix.style.backgroundColor = "red"
+            document.getElementById('pix').innerHTML = ('Chave Pix: 637-414-033-85')
         }
     </script>
 </body>
